@@ -9,7 +9,7 @@ const BottomBar = () => {
                 <Text style={BottomBarStyles.btnTxt}>Pay @ Hotel ₹3,128</Text>
                 <Text style={BottomBarStyles.btnSubTxt}>incl. ₹551 GST</Text>
             </View>
-            <View style={BottomBarStyles.button}>
+            <View style={[BottomBarStyles.button, BottomBarStyles.button2]}>
                 <Text style={BottomBarStyles.btnTxt}>Pay now ₹2,942</Text>
                 <Text style={BottomBarStyles.btnSubTxt}>incl. ₹316 GST</Text>
             </View>

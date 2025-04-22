@@ -33,7 +33,7 @@ const BottomNavbar = () => {
                     tabBarLabel: NavigationString.HOME,
                     tabBarIcon: ({ focused }) => (
                         <FontAwesome
-                            name="search"
+                            name="home"
                             size={24}
                             color={focused ? Colors.ACTIVE_NAVIGATION_COLOR : Colors.DISABLED_NAVIGATION_COLOR}
                         />

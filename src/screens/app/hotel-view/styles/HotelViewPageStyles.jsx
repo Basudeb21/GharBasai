@@ -9,7 +9,8 @@ const HotelViewPageStyles = StyleSheet.create({
     },
     headContainer: {
         flex: 1,
-        backgroundColor: Colors.THEME
+        backgroundColor: Colors.THEME,
+
     },
     bodyContainer: {
         flex: 8,

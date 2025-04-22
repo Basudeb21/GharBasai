@@ -14,7 +14,7 @@ export default {
     FADE: "#A9A9A9",
     RATINGS_BG: "#00a24e",
     FEATURES_CARD: "#18448f",
-    YELLOW: "#d3cf53",
+    YELLOW: "#fddc2b",
     REVIEW_SCREEN_BG: "#d9e7f9",
     RED: "#e02104",
 }

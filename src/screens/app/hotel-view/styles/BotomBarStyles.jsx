@@ -14,16 +14,19 @@ const BottomBarStyles = StyleSheet.create({
         backgroundColor: Colors.THEME_TRANSPARENT,
         paddingHorizontal: scale(20),
         paddingVertical: scale(5),
-        borderRadius: scale(20)
+        borderRadius: scale(20),
+        justifyContent: "center",
+        alignItems: "center"
     },
     button2: {
-
+        backgroundColor: Colors.YELLOW,
     },
     btnTxt: {
         color: Colors.WHITE
     },
     btnSubTxt: {
-
+        color: Colors.WHITE,
+        fontSize: scale(10)
     }
 });
 
