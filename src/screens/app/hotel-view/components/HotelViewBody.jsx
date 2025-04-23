@@ -6,6 +6,7 @@ const HotelViewBody = () => {
     return (
         <View>
             <HotelImgs />
+
         </View>
     )
 }
