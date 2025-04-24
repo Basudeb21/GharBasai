@@ -19,6 +19,16 @@ const HotelViewPageStyles = StyleSheet.create({
     bootomBarContainer: {
         flex: 1,
         backgroundColor: Colors.THEME
+    },
+    bgc: {
+        backgroundColor: Colors.DEACTIVE
+    },
+    nearbyHead: {
+        marginStart: moderateScale(20),
+        fontSize: scale(16),
+        fontWeight: "600",
+        marginBottom: verticalScale(10)
+
     }
 });
 

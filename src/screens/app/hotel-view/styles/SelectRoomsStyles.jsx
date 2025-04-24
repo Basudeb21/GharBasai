@@ -10,6 +10,9 @@ const SelectRoomsStyle = StyleSheet.create({
         fontSize: scale(18),
         fontWeight: "700",
         marginStart: scale(20)
+    },
+    bgc: {
+        backgroundColor: Colors.DEACTIVE
     }
 });
 

@@ -5,7 +5,8 @@ import Colors from "../../../../../../constants/Colors";
 const RoomDetailsStyle = StyleSheet.create({
     container: {
         paddingHorizontal: moderateScale(20),
-        marginTop: verticalScale(20)
+        marginTop: verticalScale(20),
+        marginBottom: verticalScale(10)
     },
     headContainer: {
         flex: 1,
