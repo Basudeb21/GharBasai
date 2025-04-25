@@ -7,6 +7,7 @@ import AntDesign from 'react-native-vector-icons/dist/AntDesign'
 
 
 import Colors from '../../../../../constants/Colors'
+import VideoPart from './VideoPart'
 
 const RatingsAndReview = () => {
     return (
@@ -121,6 +122,8 @@ const RatingsAndReview = () => {
                     </View>
 
                 </View>
+                <View style={RatingAndReviewsStyles.hr} />
+                <VideoPart />
             </View>
         </View >
     )

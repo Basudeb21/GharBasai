@@ -12,6 +12,10 @@ import FacilityCard from './components/select-rooms-components/FacilityCard'
 import SavingCornerCard from './components/select-rooms-components/SavingCornerCard'
 import SingleHotel from '../offers/offer-cities/components/SingleHotel'
 import RatingsAndReview from './components/select-rooms-components/RatingsAndReview'
+import GSTCard from './components/select-rooms-components/GSTCard'
+import TravellerDetails from './components/select-rooms-components/TravellerDetails'
+import TermsAndConditions from './components/select-rooms-components/TermsAndConditions'
+import NeedHelp from './components/select-rooms-components/NeedHelp'
 
 const HotelViewPage = () => {
     return (
@@ -29,6 +33,9 @@ const HotelViewPage = () => {
                         <HotelPoliciesCard />
                         <FacilityCard />
                         <SavingCornerCard />
+                        <GSTCard />
+                        <TravellerDetails />
+                        <TermsAndConditions />
                         <RatingsAndReview />
 
                         <Text style={HotelViewPageStyles.nearbyHead}>Other Hotels Nearby</Text>
@@ -38,7 +45,9 @@ const HotelViewPage = () => {
                     <SingleHotel />
                     <SingleHotel />
                     <SingleHotel />
-
+                    <View style={HotelViewPageStyles.bgc}>
+                        <NeedHelp />
+                    </View>
                 </ScrollView>
             </View>
 

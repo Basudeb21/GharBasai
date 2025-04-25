@@ -94,6 +94,13 @@ const RatingAndReviewsStyles = StyleSheet.create({
     bottomContentContainer: {
         flexDirection: "row"
     },
+    hr: {
+        height: verticalScale(2),
+        width: "100%",
+        backgroundColor: Colors.FADE,
+        marginVertical: verticalScale(10),
+        borderRadius: scale(100)
+    }
 
 });
 

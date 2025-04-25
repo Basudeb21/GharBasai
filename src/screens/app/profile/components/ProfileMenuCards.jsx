@@ -34,10 +34,24 @@ const ProfileMenuCards = () => {
                         key={index}
                         icon={item.icon}
                         label={item.label}
-                        onPress={() =>
-                            navigation.navigate(NavigationString.PROFILE_STACK, {
-                                screen: NavigationString.PROFILE_STACK,
-                            })
+                        onPress={() => {
+                            switch (item.label) {
+                                case "Personal Info":
+                                    navigation.navigate(NavigationString.PROFILE_STACK, {
+                                        screen: NavigationString.USER_FORM,
+                                    });
+
+                                    break;
+                                case "Help & Support":
+                                    navigation.navigate(NavigationString.PROFILE_STACK, {
+                                        screen: NavigationString.HELP_AND_SUPPORT,
+                                    });
+                                    break;
+
+
+                            }
+
+                        }
                         }
                     />
                 ))}

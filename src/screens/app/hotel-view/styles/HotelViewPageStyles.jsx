@@ -21,7 +21,8 @@ const HotelViewPageStyles = StyleSheet.create({
         backgroundColor: Colors.THEME
     },
     bgc: {
-        backgroundColor: Colors.DEACTIVE
+        backgroundColor: Colors.DEACTIVE,
+        marginTop: verticalScale(5)
     },
     nearbyHead: {
         marginStart: moderateScale(20),

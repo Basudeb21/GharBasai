@@ -22,6 +22,7 @@ export default {
     // Offered
     OFFERED_CITIES: "OfferedCities",
     USER_FORM: "UserForm",
+    HELP_AND_SUPPORT: "HelpAndSupport",
     HOTEL_LISTS: "HotelLists",
     HOTEL_VIEW_PAGE: "HotelViewPage",
 

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { View, ScrollView, StyleSheet, Text, TouchableOpacity } from 'react-native';
 import { TextInput, Button, Provider as PaperProvider } from 'react-native-paper';
-import UserFormStyles from '../UserFormStyles';
-import Head from '../../../../components/Head';
-import Colors from '../../../../../../constants/Colors';
+import UserFormStyles from '../styles/UserFormStyles';
+import Head from '../../../components/Head';
+import Colors from '../../../../../constants/Colors';
 
 const UserForm = () => {
     const [formData, setFormData] = useState({
@@ -33,7 +33,6 @@ const UserForm = () => {
                         mode="outlined"
                         style={UserFormStyles.input}
                         theme={{ colors: { primary: Colors.THEME } }}
-
                     />
 
                     <TextInput
