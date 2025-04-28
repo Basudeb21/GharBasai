@@ -29,7 +29,8 @@ const SearchInputStyles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         marginVertical: verticalScale(10),
-        marginHorizontal: moderateScale(30)
+        marginHorizontal: moderateScale(30),
+        marginBottom: verticalScale(40)
     },
     content: {
         flexDirection: 'row',

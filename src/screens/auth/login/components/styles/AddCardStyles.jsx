@@ -6,17 +6,17 @@ import Colors from "../../../../../constants/Colors";
 export default AddCardStyles = StyleSheet.create({
     mainCard: {
         width: "100%",
-        borderBottomLeftRadius: 40,
-        borderBottomRightRadius: 40,
-        backgroundColor: Colors.THEME,
+        borderBottomLeftRadius: 80,
+        borderBottomRightRadius: 80,
+        backgroundColor: Colors.LOGIN_IMG_CONTAINER,
         height: verticalScale(140),
         marginBottom: verticalScale(10),
         alignItems: "center",
         justifyContent: "center"
     },
     logo: {
-        height: verticalScale(180),
-        width: moderateScale(180)
+        height: verticalScale(220),
+        width: moderateScale(220)
     }
 
 })

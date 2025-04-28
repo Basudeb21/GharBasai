@@ -1,10 +1,16 @@
-import { View, Text, TouchableOpacity } from 'react-native'
+import { View, Text, TouchableOpacity, ImageBackground } from 'react-native'
 import React from 'react'
 import RateUs from './styles/RateUs'
+import Images from '../../../../constants/Images'
+import { scale } from 'react-native-size-matters'
 
 const RateApp = () => {
     return (
-        <View style={RateUs.cardContainer}>
+        <ImageBackground
+            source={Images.RATE}
+            resizeMode="cover"
+            borderRadius={scale(20)}
+            style={RateUs.cardContainer}>
             <View style={RateUs.textContainer}>
                 <Text style={RateUs.title}>Love using our app?</Text>
                 <Text style={RateUs.subText}>Rate us on Play Store</Text>
@@ -12,11 +18,7 @@ const RateApp = () => {
                     <Text style={RateUs.buttonText}>Rate Now</Text>
                 </TouchableOpacity>
             </View>
-
-            <View style={RateUs.iconBackground}>
-                <Text style={RateUs.iconHint}>💙 ⭐ 👍 📍</Text>
-            </View>
-        </View>
+        </ImageBackground>
     )
 }
 

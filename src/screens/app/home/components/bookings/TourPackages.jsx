@@ -9,10 +9,10 @@ import Colors from '../../../../../constants/Colors';
 
 
 
-const BookingSearchArea = () => {
+const TourPackages = () => {
     const [location, setLocation] = useState('');
     return (
-        <View style={[HomeScreenStyles.searchAreaContainer]}>
+        <View style={HomeScreenStyles.searchAreaContainer}>
             <BookingInput
                 label="Where to?"
                 placeholder="Search city, area or hotel"
@@ -25,12 +25,7 @@ const BookingSearchArea = () => {
                 value={location}
                 onChangeText={setLocation}
                 keyboardType="default" />
-            <BookingInput
-                label="Checkout"
-                placeholder="Fri, 18 Apr"
-                value={location}
-                onChangeText={setLocation}
-                keyboardType="default" />
+
             <BookingInput
                 label="Guestes"
                 placeholder="2 guestes"
@@ -52,4 +47,4 @@ const BookingSearchArea = () => {
     )
 }
 
-export default BookingSearchArea
+export default TourPackages

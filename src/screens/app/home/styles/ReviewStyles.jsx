@@ -12,8 +12,9 @@ const ReviewStyles = StyleSheet.create({
     card: {
         backgroundColor: Colors.WHITE,
         marginBottom: verticalScale(20),
-        width: "80%",
-        borderRadius: scale(10)
+        width: moderateScale(280),
+        borderRadius: scale(10),
+        marginHorizontal: moderateScale(10)
     },
     topTxt: {
         color: Colors.CREDENTIAL_ACTIVE_TEXT,
@@ -27,13 +28,12 @@ const ReviewStyles = StyleSheet.create({
         color: Colors.THEME
     },
     reviewerParent: {
-        flex: 1,
         flexDirection: "row",
         alignItems: "center",
     },
     avatar: {
         color: Colors.WHITE,
-        backgroundColor: Colors.THEME_TRANSPARENT,
+        backgroundColor: Colors.AVATAR_BG,
         alignSelf: "flex-start",
         fontSize: scale(16),
         paddingVertical: verticalScale(8),
@@ -53,6 +53,8 @@ const ReviewStyles = StyleSheet.create({
     },
     costomerStayedAt: {
         color: Colors.DISABLED_TXT,
+        flexShrink: 1,
+        flexWrap: "wrap",
     },
     comment: {
         paddingHorizontal: moderateScale(10),

@@ -3,8 +3,10 @@ import React from 'react'
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Feather from 'react-native-vector-icons/Feather';
-import Entypo from 'react-native-vector-icons/Entypo';
+import AntDesign from 'react-native-vector-icons/AntDesign';
+
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+
 import ProfileOptionCard from './ProfileOptionCard ';
 import ProfileCardStyles from './styles/ProfileCardStyles';
 import { useNavigation } from '@react-navigation/native';
@@ -19,12 +21,15 @@ const ProfileMenuCards = () => {
         { icon: <FontAwesome name="user" size={24} color="#2b2b2b" />, label: "Personal Info" },
         { icon: <MaterialCommunityIcons name="account-group-outline" size={24} color="#2b2b2b" />, label: "Travellers' List" },
         { icon: <MaterialIcons name="receipt" size={24} color="#2b2b2b" />, label: "GSTIN" },
-        { icon: <MaterialCommunityIcons name="wallet-outline" size={24} color="#2b2b2b" />, label: "Wallet" },
         { icon: <Feather name="briefcase" size={24} color="#2b2b2b" />, label: "Trips" },
         { icon: <Feather name="user-plus" size={24} color="#2b2b2b" />, label: "Refer & Earn" },
-        { icon: <Entypo name="medal" size={24} color="#2b2b2b" />, label: "A-List" },
-        { icon: <MaterialIcons name="card-giftcard" size={24} color="#2b2b2b" />, label: "Scratch Cards" },
         { icon: <Feather name="help-circle" size={24} color="#2b2b2b" />, label: "Help & Support" },
+        { icon: <MaterialIcons name="favorite" size={24} color="#2b2b2b" />, label: "Favorite" },
+        { icon: <Feather name="credit-card" size={24} color="#2b2b2b" />, label: "Payment" },
+        { icon: <AntDesign name="wechat" size={24} color="#2b2b2b" />, label: "Chat" },
+
+
+
     ];
     return (
         <View>

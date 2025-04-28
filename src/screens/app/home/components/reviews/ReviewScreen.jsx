@@ -8,8 +8,12 @@ const ReviewScreen = () => {
     return (
         <View style={ReviewStyles.container}>
             <ReviewTopTxt />
+            <ScrollView horizontal={true}>
+                <ReviewCard />
+                <ReviewCard />
+                <ReviewCard />
 
-            <ReviewCard />
+            </ScrollView>
         </View>
     )
 }

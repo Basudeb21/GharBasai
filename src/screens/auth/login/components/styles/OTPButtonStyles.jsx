@@ -4,6 +4,7 @@ import Colors from "../../../../../constants/Colors";
 
 export default OTPButtonStyles = StyleSheet.create({
     buttonStyle: {
+        marginTop: verticalScale(10),
         marginHorizontal: moderateScale(20),
         backgroundColor: Colors.THEME,
         paddingVertical: verticalScale(10),

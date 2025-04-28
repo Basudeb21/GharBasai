@@ -1,18 +1,36 @@
-import { View, Text } from 'react-native'
-import React from 'react'
-import AddCard from './components/AddCard'
-import LoginInput from './components/LoginInput'
-import GetOtpButton from './components/GetOtpButton'
-import TermsAndConditions from './components/TermsAndConditions'
-import String from '../../../constants/String'
+import { View, Text, TouchableOpacity } from 'react-native';
+import React from 'react';
+import AddCard from './components/AddCard';
+import LoginInput from './components/LoginInput';
+import GetOtpButton from './components/GetOtpButton';
+import TermsAndConditions from './components/TermsAndConditions';
+import String from '../../../constants/String';
+import OTPButtonStyles from './components/styles/OTPButtonStyles';
+import NavigationString from '../../../constants/NavigationString';
+import { useNavigation } from '@react-navigation/native';
+import LoginStyles from './components/styles/LoginStyles';
 
+const Login = ({ onSkipLogin }) => {
+    const navigation = useNavigation();
 
-const Login = () => {
     return (
-        <View style={{ flex: 1, justifyContent: 'space-between' }}>
+        <View style={LoginStyles.container}>
             <View>
                 <AddCard />
-                <Text style={TextStyles.signUpBonusText}>{String.BONUS_TXT}</Text>
+                <View style={LoginStyles.bonusContainer}>
+                    <Text style={TextStyles.signUpBonusText}>{String.BONUS_TXT}</Text>
+                    <TouchableOpacity
+                        style={LoginStyles.btn}
+                        onPress={() => {
+                            if (onSkipLogin) {
+                                onSkipLogin();
+                            }
+                            navigation.navigate(NavigationString.MAIN_STACK);
+                        }}
+                    >
+                        <Text style={LoginStyles.btnTxt}>SKIP</Text>
+                    </TouchableOpacity>
+                </View>
                 <LoginInput placeholder="Enter your phone number" />
                 <Text style={TextStyles.refferalCodeText}>{String.REFFERAL_TXT}</Text>
                 <GetOtpButton />
@@ -20,7 +38,7 @@ const Login = () => {
 
             <TermsAndConditions />
         </View>
-    )
-}
+    );
+};
 
-export default Login
+export default Login;

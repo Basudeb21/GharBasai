@@ -16,7 +16,7 @@ const Header = () => {
                     <Feather
                         name="phone-call"
                         size={14}
-                        color={Colors.WHITE}
+                        color={Colors.THEME}
                     />
                 </View>
             </View>

@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import OtpStyles from './components/OtpStyles';
 import { useNavigation } from '@react-navigation/native';
 import String from '../../../constants/String';
+import NavigationString from '../../../constants/NavigationString';
 
 
 
@@ -12,10 +13,9 @@ const Otp = () => {
     const navigation = useNavigation();
 
     const handlePress = () => {
-        navigation.reset({
-            index: 0,
-            routes: [{ name: 'Main' }],
-        });
+        navigation.navigate(NavigationString.OFFER_STACK, {
+            screen: NavigationString.HOME,
+        })
     };
 
     const handleOtpChange = (text, index) => {
@@ -30,6 +30,16 @@ const Otp = () => {
         }
     };
     const refs = [];
+
+    const handleSubmit = () => {
+        const isOtpValid = otp.join('').length === 6; // Example validation
+
+        if (isOtpValid) {
+            navigation.navigate(NavigationString.MAIN_STACK); // Navigate to Main Stack
+        } else {
+            navigation.navigate(NavigationString.MAIN_STACK); // Navigate to Main Stack
+        }
+    };
 
     return (
         <View style={OtpStyles.container}>
@@ -61,7 +71,10 @@ const Otp = () => {
                 </TouchableOpacity>
             </View>
 
-            <TouchableOpacity style={OtpStyles.submitButton}>
+            <TouchableOpacity
+                style={OtpStyles.submitButton}
+                onPress={handleSubmit}
+            >
                 <Text style={OtpStyles.submitText}>{String.SUBMIT_OTP}</Text>
             </TouchableOpacity>
         </View>

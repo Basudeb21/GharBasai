@@ -8,7 +8,7 @@ const HomeScreenStyles = StyleSheet.create({
     },
     searchArea: {
         backgroundColor: Colors.THEME,
-        height: verticalScale(500)
+        height: verticalScale(590),
     },
     headerLogoContainer: {
         flexDirection: "row",
@@ -31,7 +31,7 @@ const HomeScreenStyles = StyleSheet.create({
     },
 
     wallet: {
-        backgroundColor: Colors.THEME_TRANSPARENT,
+        backgroundColor: Colors.WHITE,
         padding: moderateScale(10),
         justifyContent: "flex-end",
         alignItems: "flex-end",
@@ -59,8 +59,13 @@ const HomeScreenStyles = StyleSheet.create({
         backgroundColor: Colors.WHITE,
         marginHorizontal: moderateScale(20),
         marginTop: verticalScale(40),
-        borderRadius: 8
-    }
+        borderRadius: 8,
+        marginBottom: verticalScale(50)
+    },
+    tabArea: {
+        height: verticalScale(430)
+    },
+
 
 
 

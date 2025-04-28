@@ -15,9 +15,6 @@ export default function OfferStack() {
             <Stack.Screen name={NavigationString.OFFERED_CITIES} component={OfferedCities} />
             <Stack.Screen name={NavigationString.HOTEL_LISTS} component={HotelList} />
             <Stack.Screen name={NavigationString.HOTEL_VIEW_PAGE} component={HotelViewPage} />
-
-
-
         </Stack.Navigator>
     )
 }

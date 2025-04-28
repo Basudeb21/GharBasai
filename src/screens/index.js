@@ -10,5 +10,5 @@ export { default as Offers } from "./app/offers/Offers"
 export { default as Profile } from "./app/profile/Profile"
 export { default as Search } from "./app/Search"
 export { default as SearchResult } from "./app/SearchResult"
-export { default as Trips } from "./app/Trips"
+export { default as Trips } from "./app/trips/Trips"
 

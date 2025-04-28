@@ -17,7 +17,10 @@ const BookingInput = ({
         <View style={SearchInputStyles.container}>
             <Text style={SearchInputStyles.label}>{label}</Text>
             <TextInput
-                style={SearchInputStyles.input}
+                style={[
+                    SearchInputStyles.input,
+                    !editable && { opacity: 0.5, backgroundColor: Colors.LIGHT_GRAY }
+                ]}
                 placeholder={placeholder}
                 placeholderTextColor={Colors.CREDENTIAL_ACTIVE_TEXT}
                 keyboardType={keyboardType}

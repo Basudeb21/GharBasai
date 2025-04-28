@@ -15,6 +15,9 @@ export default {
     RATINGS_BG: "#00a24e",
     FEATURES_CARD: "#18448f",
     YELLOW: "#fddc2b",
-    REVIEW_SCREEN_BG: "#d9e7f9",
+    REVIEW_SCREEN_BG: "#FFE4E0",
     RED: "#e02104",
+    AVATAR_BG: "#E02104",
+    BTN_DEACTIVE: "#282561",
+    LOGIN_IMG_CONTAINER: "#DEDEDE"
 }

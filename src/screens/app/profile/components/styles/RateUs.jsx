@@ -5,14 +5,12 @@ import Colors from "../../../../../constants/Colors";
 
 const RateUs = StyleSheet.create({
     cardContainer: {
-        backgroundColor: '#D6F0FF',
         borderRadius: 12,
         padding: 20,
         margin: 16,
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        elevation: 3,
     },
     textContainer: {
         flex: 1,
@@ -28,11 +26,13 @@ const RateUs = StyleSheet.create({
         marginVertical: 4,
     },
     button: {
-        backgroundColor: '#FFD700',
+        backgroundColor: Colors.YELLOW,
         paddingVertical: verticalScale(8),
         paddingHorizontal: moderateScale(10),
         borderRadius: 50,
-        marginTop: verticalScale(10)
+        marginTop: verticalScale(10),
+        alignSelf: "flex-start",
+        paddingEnd: moderateScale(60)
     },
     buttonText: {
         color: Colors.CREDENTIAL_ACTIVE_TEXT,

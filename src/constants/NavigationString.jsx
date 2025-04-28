@@ -4,6 +4,7 @@ export default {
     OFFER_STACK: "OfferStack",
     HOTEL_VIEW_STACK: "HotelViewStack",
     PROFILE_STACK: "ProfileStack",
+    MAIN_STACK: "MainStack",
 
     // Auth
     LOGIN: "Login",

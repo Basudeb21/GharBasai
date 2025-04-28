@@ -6,7 +6,7 @@ const ReviewPersonDetails = () => {
     return (
         <View>
             <Text style={ReviewStyles.customerName}>Jhon Doe</Text>
-            <Text style={ReviewStyles.costomerStayedAt} >Stayed at fabHotel  7 Square in Mumbai in 20 Jul</Text>
+            <Text style={ReviewStyles.costomerStayedAt} numberOfLines={2} >Stayed at fabHotel  7 Square in Mumbai in 20 Jul</Text>
         </View>
     )
 }
