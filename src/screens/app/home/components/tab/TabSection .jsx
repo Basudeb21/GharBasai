@@ -1,39 +1,31 @@
-import { View, Text, TouchableOpacity } from 'react-native';
-import React, { useState } from 'react';
+import React from 'react';
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import BookingSearchArea from '../bookings/BookingSearchArea';
 import TourPackages from '../bookings/TourPackages';
-import TabSectionStyles from './TabSectionStyle';
+import Colors from '../../../../../constants/Colors';
 
+const Tab = createMaterialTopTabNavigator();
 
 const TabSection = () => {
-    const [activeTab, setActiveTab] = useState('Hotels');
     return (
-        <View>
-            <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 20 }}>
-                <TouchableOpacity
-                    style={TabSectionStyles.button}
-                    onPress={() => setActiveTab('Hotels')}
-                >
-                    <Text style={TabSectionStyles.buttonFont}>
-                        Hotels Booking
-                    </Text>
-                </TouchableOpacity>
+        <Tab.Navigator
+            screenOptions={{
+                tabBarLabelStyle: { fontSize: 16, fontWeight: '600' },
+                tabBarIndicatorStyle: { backgroundColor: Colors.THEME },
+                tabBarActiveTintColor: Colors.THEME,
+                tabBarInactiveTintColor: Colors.WHITE,
+                tabBarStyle: {
+                    backgroundColor: 'transparent',
+                    elevation: 0,
+                    shadowOpacity: 0,
+                },
 
-                <TouchableOpacity
-                    style={TabSectionStyles.button}
-                    onPress={() => setActiveTab('Tours')}
-                >
-                    <Text style={TabSectionStyles.buttonFont}>
-                        Tour Booking
-                    </Text>
-                </TouchableOpacity>
-            </View>
-
-            <View>
-                {activeTab === 'Hotels' ? <BookingSearchArea /> : <TourPackages />}
-            </View>
-        </View>
+            }}
+            lazy={true}
+        >
+            <Tab.Screen name="Hotels Booking" component={BookingSearchArea} />
+            <Tab.Screen name="Tour Booking" component={TourPackages} />
+        </Tab.Navigator>
     );
 };
-
 export default TabSection;

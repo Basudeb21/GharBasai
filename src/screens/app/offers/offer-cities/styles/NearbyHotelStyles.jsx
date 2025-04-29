@@ -2,10 +2,12 @@ import { StyleSheet } from "react-native"
 import { scale, verticalScale, moderateScale } from 'react-native-size-matters';
 import Colors from "../../../../../constants/Colors";
 
-const HotelListStyles = StyleSheet.create({
-    foundContainer: {
+const NearbyHotelsStyles = StyleSheet.create({
+    hrContainer: {
         paddingHorizontal: moderateScale(20),
-        paddingTop: verticalScale(10)
+        paddingTop: verticalScale(10),
+        marginTop: verticalScale(10),
+        width: moderateScale(280),
     },
 
     foundTxt: {
@@ -71,6 +73,7 @@ const HotelListStyles = StyleSheet.create({
         marginTop: verticalScale(2)
     },
     rentContainer: {
+
     },
     rent: {
         fontWeight: "700"
@@ -89,4 +92,4 @@ const HotelListStyles = StyleSheet.create({
     }
 });
 
-export default HotelListStyles;
+export default NearbyHotelsStyles;

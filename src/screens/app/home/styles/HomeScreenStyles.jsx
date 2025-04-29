@@ -4,11 +4,14 @@ import Colors from "../../../../constants/Colors";
 
 const HomeScreenStyles = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
+        backgroundColor: "transparent"
     },
     searchArea: {
-        backgroundColor: Colors.THEME,
+        backgroundColor: "transparent",
         height: verticalScale(590),
+        marginTop: -1,
+        marginBottom: -1,
     },
     headerLogoContainer: {
         flexDirection: "row",
@@ -56,14 +59,15 @@ const HomeScreenStyles = StyleSheet.create({
     },
 
     searchAreaContainer: {
-        backgroundColor: Colors.WHITE,
+        backgroundColor: "transparent",
         marginHorizontal: moderateScale(20),
         marginTop: verticalScale(40),
         borderRadius: 8,
         marginBottom: verticalScale(50)
     },
     tabArea: {
-        height: verticalScale(430)
+        height: verticalScale(430),
+        backgroundColor: "transparent"
     },
 
 

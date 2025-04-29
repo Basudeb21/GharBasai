@@ -6,7 +6,6 @@ import BottomBar from './components/BottomBar'
 import HotelViewBody from './components/HotelViewBody'
 import HomeStayDetailsBox from './components/HomeStayDetailsBox'
 import RatingBox from './components/RatingBox'
-import SelectRoom from './components/SelectRoom'
 import HotelPoliciesCard from './components/select-rooms-components/HotelPoliciesCard'
 import FacilityCard from './components/select-rooms-components/FacilityCard'
 import SavingCornerCard from './components/select-rooms-components/SavingCornerCard'
@@ -16,6 +15,7 @@ import GSTCard from './components/select-rooms-components/GSTCard'
 import TravellerDetails from './components/select-rooms-components/TravellerDetails'
 import TermsAndConditions from './components/select-rooms-components/TermsAndConditions'
 import NeedHelp from './components/select-rooms-components/NeedHelp'
+import NearbyHotels from './components/NearbyHotels'
 
 const HotelViewPage = () => {
     return (
@@ -26,10 +26,9 @@ const HotelViewPage = () => {
             <View style={HotelViewPageStyles.bodyContainer}>
                 <ScrollView showsVerticalScrollIndicator={false}>
                     <HotelViewBody />
-                    <HomeStayDetailsBox />
-                    <RatingBox />
-                    <SelectRoom />
                     <View style={HotelViewPageStyles.bgc}>
+                        <HomeStayDetailsBox />
+                        <RatingBox />
                         <HotelPoliciesCard />
                         <FacilityCard />
                         <SavingCornerCard />
@@ -42,9 +41,13 @@ const HotelViewPage = () => {
                     </View>
 
 
-                    <SingleHotel />
-                    <SingleHotel />
-                    <SingleHotel />
+                    <ScrollView horizontal={true}>
+                        <NearbyHotels />
+                        <NearbyHotels />
+                        <NearbyHotels />
+                        <NearbyHotels />
+
+                    </ScrollView>
                     <View style={HotelViewPageStyles.bgc}>
                         <NeedHelp />
                     </View>

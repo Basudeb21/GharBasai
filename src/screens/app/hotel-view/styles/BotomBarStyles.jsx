@@ -11,7 +11,7 @@ const BottomBarStyles = StyleSheet.create({
         paddingHorizontal: scale(20)
     },
     button: {
-        backgroundColor: Colors.THEME_TRANSPARENT,
+        backgroundColor: Colors.WHITE,
         paddingHorizontal: scale(20),
         paddingVertical: scale(5),
         borderRadius: scale(20),
@@ -19,15 +19,23 @@ const BottomBarStyles = StyleSheet.create({
         alignItems: "center"
     },
     button2: {
-        backgroundColor: Colors.YELLOW,
+        backgroundColor: Colors.BLUE,
     },
     btnTxt: {
-        color: Colors.WHITE
+        color: Colors.CREDENTIAL_ACTIVE_TEXT
     },
     btnSubTxt: {
+        color: Colors.CREDENTIAL_ACTIVE_TEXT,
+        fontSize: scale(10)
+    },
+    btnTxt2: {
+        color: Colors.WHITE
+    },
+    btnSubTxt2: {
         color: Colors.WHITE,
         fontSize: scale(10)
     }
+
 });
 
 export default BottomBarStyles;

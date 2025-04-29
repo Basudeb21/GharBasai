@@ -14,8 +14,8 @@ const BestDealsStyles = StyleSheet.create({
     },
     card: {
         width: moderateScale(300),
-        height: verticalScale(200),
-        marginEnd: moderateScale(10)
+        height: verticalScale(150),
+        marginEnd: moderateScale(10),
     },
     bgImage: {
         borderRadius: scale(20),
@@ -34,7 +34,7 @@ const BestDealsStyles = StyleSheet.create({
     },
     txtContainer: {
         marginStart: moderateScale(20),
-        marginTop: verticalScale(50)
+        marginTop: verticalScale(40)
     },
     discountTxt: {
         color: Colors.CREDENTIAL_ACTIVE_TEXT,
@@ -44,7 +44,7 @@ const BestDealsStyles = StyleSheet.create({
     describtion: {
         color: Colors.CREDENTIAL_ACTIVE_TEXT,
         fontWeight: "300",
-        fontSize: scale(20)
+        fontSize: scale(20),
     }
 });
 

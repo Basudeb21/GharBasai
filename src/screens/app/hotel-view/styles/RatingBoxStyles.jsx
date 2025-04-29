@@ -6,7 +6,8 @@ const RatingBoxStyles = StyleSheet.create({
     container: {
         borderRadius: scale(8),
         marginTop: verticalScale(10),
-        marginHorizontal: moderateScale(10),
+        marginHorizontal: moderateScale(20),
+        marginBottom: verticalScale(10),
         padding: 10,
         elevation: 2,
         backgroundColor: Colors.WHITE,

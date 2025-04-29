@@ -2,7 +2,6 @@ import { View, Text, ScrollView, ImageBackground } from 'react-native'
 import React from 'react'
 import HomeScreenStyles from "./styles/HomeScreenStyles"
 import Destination from './components/destination/Destination'
-import BestDeals from './components/BestDeals'
 import FeaturesCard from './components/features/FeaturesCard'
 import BookText from './components/bookings/BookText'
 import RecentSearch from './components/recent/RecentSearch'
@@ -24,21 +23,26 @@ const Home = () => {
                 source={Images.HOME}
                 resizeMode="cover"
                 style={HomeScreenStyles.searchArea}>
-                <Header />
-                <BookText />
-                <View style={HomeScreenStyles.tabArea}>
-                    <TabSection />
-                </View>
+                <ScrollView
+                    style={HomeScreenStyles.container}
+                    contentContainerStyle={{ flexGrow: 1 }}
+                >
+                    <Header />
+                    <BookText />
+                    <View style={HomeScreenStyles.tabArea}>
+                        <TabSection />
+                    </View>
+                </ScrollView>
             </ImageBackground>
             <RecentSearch />
             <Destination />
             <HotelLists />
-            <BestDeals />
             <FeaturesCard />
             <ReviewScreen />
             <Brands />
             <Franchisee />
         </ScrollView>
+
     )
 }
 

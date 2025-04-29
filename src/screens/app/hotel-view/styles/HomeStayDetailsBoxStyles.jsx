@@ -4,12 +4,13 @@ import Colors from "../../../../constants/Colors";
 
 const HomeStayDetailsBoxStyles = StyleSheet.create({
     container: {
-        marginHorizontal: moderateScale(8),
+        marginHorizontal: moderateScale(20),
         height: verticalScale(150),
         padding: scale(10),
         borderRadius: scale(10),
         elevation: 2,
-        backgroundColor: Colors.WHITE
+        backgroundColor: Colors.WHITE,
+        marginTop: verticalScale(8)
     },
     singleDetails: {
         flexDirection: "row",

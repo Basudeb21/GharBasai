@@ -19,5 +19,6 @@ export default {
     RED: "#e02104",
     AVATAR_BG: "#E02104",
     BTN_DEACTIVE: "#282561",
-    LOGIN_IMG_CONTAINER: "#DEDEDE"
+    LOGIN_IMG_CONTAINER: "#DEDEDE",
+    PURPLE: "#948EFFCC",
 }

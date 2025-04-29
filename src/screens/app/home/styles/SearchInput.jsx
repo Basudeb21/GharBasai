@@ -7,10 +7,11 @@ const SearchInputStyles = StyleSheet.create({
     container: {
         marginVertical: 10,
         paddingHorizontal: 10,
+        backgroundColor: "transparent"
     },
     label: {
         fontSize: 12,
-        color: Colors.DARK_GRAY,
+        color: Colors.WHITE,
         marginBottom: 4,
     },
     input: {
