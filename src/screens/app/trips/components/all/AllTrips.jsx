@@ -1,10 +1,11 @@
 import { View, Text } from 'react-native'
 import React from 'react'
+import EmptyPage from '../upcoming/EmptyPage'
 
 const AllTrips = () => {
     return (
         <View>
-            <Text>AllTrips</Text>
+            <EmptyPage />
         </View>
     )
 }
