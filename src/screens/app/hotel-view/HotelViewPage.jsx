@@ -1,4 +1,4 @@
-import { View, Text, ScrollView } from 'react-native'
+import { View, Text, ScrollView, useState } from 'react-native'
 import React from 'react'
 import HotelViewPageStyles from './styles/HotelViewPageStyles'
 import Head from './components/Head'
@@ -16,8 +16,11 @@ import TravellerDetails from './components/select-rooms-components/TravellerDeta
 import TermsAndConditions from './components/select-rooms-components/TermsAndConditions'
 import NeedHelp from './components/select-rooms-components/NeedHelp'
 import NearbyHotels from './components/NearbyHotels'
+import PayCard from './components/PayCard' // Import the PayCard component
 
 const HotelViewPage = () => {
+    const [isPayCardVisible, setIsPayCardVisible] = React.useState(false);
+
     return (
         <View style={HotelViewPageStyles.container}>
             <View style={HotelViewPageStyles.headContainer}>
@@ -40,13 +43,11 @@ const HotelViewPage = () => {
                         <Text style={HotelViewPageStyles.nearbyHead}>Other Hotels Nearby</Text>
                     </View>
 
-
                     <ScrollView horizontal={true}>
                         <NearbyHotels />
                         <NearbyHotels />
                         <NearbyHotels />
                         <NearbyHotels />
-
                     </ScrollView>
                     <View style={HotelViewPageStyles.bgc}>
                         <NeedHelp />
@@ -55,11 +56,17 @@ const HotelViewPage = () => {
             </View>
 
             <View style={HotelViewPageStyles.bootomBarContainer}>
-                <BottomBar />
+                <BottomBar
+                    onPayAtHotelPress={() => setIsPayCardVisible(true)}
+                />
             </View>
+
+            <PayCard
+                isVisible={isPayCardVisible}
+                onClose={() => setIsPayCardVisible(false)}
+            />
         </View>
     );
 };
-
 
 export default HotelViewPage

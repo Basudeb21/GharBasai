@@ -12,6 +12,7 @@ import Franchisee from './components/connect-with-us/Franchisee'
 import TabSection from './components/tab/TabSection '
 import Images from '../../../constants/Images'
 import Brands from './components/brands/Brands'
+import TourList from './components/hotel-list/TourList'
 
 
 
@@ -37,6 +38,7 @@ const Home = () => {
             <RecentSearch />
             <Destination />
             <HotelLists />
+            <TourList />
             <FeaturesCard />
             <ReviewScreen />
             <Brands />

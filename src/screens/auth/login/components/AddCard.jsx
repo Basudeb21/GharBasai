@@ -1,7 +1,6 @@
-import { View, Text } from 'react-native'
+import { View, Text, Image } from 'react-native'
 import React from 'react'
 import AddCardStyles from './styles/AddCardStyles'
-import { Image } from 'react-native-elements'
 import Images from '../../../../constants/Images'
 
 

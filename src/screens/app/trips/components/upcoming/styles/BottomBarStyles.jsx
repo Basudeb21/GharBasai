@@ -11,16 +11,16 @@ const BottomBarStyles = StyleSheet.create({
         paddingVertical: scale(10)
     },
     btn: {
-        backgroundColor: Colors.WHITE,
+        backgroundColor: Colors.THEME_TRANSPARENT,
         paddingVertical: verticalScale(10),
         paddingHorizontal: moderateScale(20),
         borderRadius: scale(20),
         borderWidth: scale(2),
         borderColor: Colors.THEME,
-        marginVertical: verticalScale(8)
+        marginVertical: verticalScale(8),
     },
     btnTxt: {
-        color: Colors.THEME,
+        color: Colors.WHITE,
         fontWeight: "600"
     }
 
