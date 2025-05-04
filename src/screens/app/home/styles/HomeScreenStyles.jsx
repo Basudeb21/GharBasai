@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native"
 import { scale, verticalScale, moderateScale } from 'react-native-size-matters';
 import Colors from "../../../../constants/Colors";
-
+import { SafeAreaView } from 'react-native-safe-area-context';
 const HomeScreenStyles = StyleSheet.create({
     container: {
         flex: 1,

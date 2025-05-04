@@ -13,38 +13,41 @@ import TabSection from './components/tab/TabSection '
 import Images from '../../../constants/Images'
 import Brands from './components/brands/Brands'
 import TourList from './components/hotel-list/TourList'
+import Colors from '../../../constants/Colors'
+import { SafeAreaView } from 'react-native-safe-area-context'; // Use this package
 
 
 
 const Home = () => {
 
     return (
-        <ScrollView style={HomeScreenStyles.container}>
-            <ImageBackground
-                source={Images.HOME}
-                resizeMode="cover"
-                style={HomeScreenStyles.searchArea}>
-                <ScrollView
-                    style={HomeScreenStyles.container}
-                    contentContainerStyle={{ flexGrow: 1 }}
-                >
-                    <Header />
-                    <BookText />
-                    <View style={HomeScreenStyles.tabArea}>
-                        <TabSection />
-                    </View>
-                </ScrollView>
-            </ImageBackground>
-            <RecentSearch />
-            <Destination />
-            <HotelLists />
-            <TourList />
-            <FeaturesCard />
-            <ReviewScreen />
-            <Brands />
-            <Franchisee />
-        </ScrollView>
-
+        <SafeAreaView style={{ flex: 1, backgroundColor: Colors.BACKGROUND || Colors.WH }}>
+            <ScrollView style={HomeScreenStyles.container}>
+                <ImageBackground
+                    source={Images.HOME}
+                    resizeMode="cover"
+                    style={HomeScreenStyles.searchArea}>
+                    <ScrollView
+                        style={HomeScreenStyles.container}
+                        contentContainerStyle={{ flexGrow: 1 }}
+                    >
+                        <Header />
+                        <BookText />
+                        <View style={HomeScreenStyles.tabArea}>
+                            <TabSection />
+                        </View>
+                    </ScrollView>
+                </ImageBackground>
+                <RecentSearch />
+                <Destination />
+                <HotelLists />
+                <TourList />
+                <FeaturesCard />
+                <ReviewScreen />
+                <Brands />
+                <Franchisee />
+            </ScrollView>
+        </SafeAreaView>
     )
 }
 
